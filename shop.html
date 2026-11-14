@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Zach Lifestyle</title>
+  <meta name="theme-color" content="#F8F8FF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="shop">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="crumbs"><a href="index.html">Home</a>/<span id="crumb-last">Shop</span></nav>
+        <h1 id="shop-title">All Jewellery</h1>
+        <p id="shop-sub"></p>
+      </div>
+    </section>
+    <div class="toolbar">
+      <div class="wrap toolbar-inner">
+        <div class="chips" id="cat-chips"></div>
+        <select class="select" id="sort" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="new">Newest</option>
+          <option value="rating">Top rated</option>
+          <option value="discount">Biggest discount</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </div>
+    </div>
+    <section class="wrap" style="padding-bottom:100px">
+      <div class="result-count"><span id="count"></span><div class="metal-filter" id="metal-filter"></div></div>
+      <div class="p-grid" id="shop-grid"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/data.js"></script>
+  <script src="assets/jewel.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
